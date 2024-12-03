@@ -1,66 +1,23 @@
-## Foundry
+# Onchain Backup
+*A contract system for backing up large file onchain, that can be used in conjunction with IPFS to restore lost nfts*
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Install
+We use [Foundry](https://book.getfoundry.sh) in this repository for compling the contracts and running tests. Simulations are run with Anvil and Python. Inn order to run the python project, you should use [Poetry](https://python-poetry.org/).
 
-Foundry consists of:
+Make sure to run `make update` to install the dependencies with Soldeer.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Running Tests
+Run `make test-all`
 
-## Documentation
+## Running simulation
+Run `make simulate`
 
-https://book.getfoundry.sh/
+## Disclaimer
+This codebase is provided on an "as is" and "as available" basis.
 
-## Usage
+We do not give any warranties and will not be liable for any loss incurred through any use of this codebase.
 
-### Build
+## License
+This code is copyright Transient Labs, Inc 2024 and is licensed under the MIT license.
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+The works referenced in the `simulation` folder are CC0 to the best of our knowledge.
